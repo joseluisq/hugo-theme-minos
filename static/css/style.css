@@ -93,7 +93,7 @@ input,
 button {
   margin: 0;
   padding: 0;
-  font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font: 1.5rem 'Lora', serif;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -114,11 +114,12 @@ body,
 }
 body {
   background: #fff;
-  font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font: 1.5rem 'Lora', serif;
   -webkit-text-size-adjust: 100%;
+  line-height: 2.35rem;
 }
 .outer {
-  max-width: 800px;
+  max-width: 60rem;
   margin: 0 auto;
 }
 .outer:before,
@@ -159,12 +160,10 @@ body {
   background-repeat: no-repeat;
 }
 .logo-text {
-  width: auto;
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 57px;
+  color: #333;
+  font-size: 2rem;
   margin-right: 25px;
+  line-height: 4rem;
   text-decoration: none;
   background-image: none;
 }
@@ -248,7 +247,7 @@ a.article-title:hover,
   bottom: -0.2em;
 }
 .article-entry small {
-  font-size: 0.85em;
+  font-size: 1.35rem;
 }
 .article-entry acronym,
 .article-entry abbr {
@@ -277,9 +276,8 @@ a.article-title:hover,
   font-weight: bold;
 }
 #header {
-  font-size: 14px;
   position: relative;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e0e0e0;
 }
 #header.mobile-on #main-nav,
 #header.mobile-on #sub-nav {
@@ -398,12 +396,15 @@ a.article-title:hover,
   cursor: pointer;
 }
 .article {
-  margin: 50px 0;
-  border-bottom: 1px solid #ddd;
+  margin: 2rem 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 .article-inner {
   margin-bottom: 15px;
   overflow: hidden;
+}
+.article-meta {
+  margin-bottom: 0.75rem;
 }
 .article-meta:before,
 .article-meta:after {
@@ -445,10 +446,10 @@ a.article-title:hover,
   margin-left: 8px;
 }
 .article-header {
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 .article-title {
-  font-size: 2em;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1em;
 }
@@ -466,8 +467,7 @@ a.article-title:hover,
 }
 .article-entry p,
 .article-entry table {
-  line-height: 1.4em;
-  margin: 1.4em 0;
+  margin-bottom: 1.35rem;
 }
 .article-entry h1,
 .article-entry h2,
@@ -506,11 +506,11 @@ a.article-title:hover,
   padding-bottom: 0.5em;
 }
 .article-entry td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e0e0e0;
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font-family: 'Lora', serif;
   font-size: 1.4em;
   margin: 1.4em 20px;
   text-align: center;
@@ -566,7 +566,7 @@ a.article-title:hover,
   border-bottom-color: #939393;
 }
 .article-footer {
-  font-size: 0.85em;
+  font-size: 1.35rem;
   padding: 1.4em 0;
   line-height: 1.4em;
   margin: 0;
@@ -644,7 +644,7 @@ a.article-title:hover,
   margin-right: -2px;
 }
 .article-nav-title {
-  font-size: 0.85em;
+  font-size: 1.35rem;
   line-height: 1.4em;
   margin-top: 0.5em;
 }
@@ -728,7 +728,7 @@ a.article-title:hover,
 }
 .archives {
   margin-left: 5px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #e0e0e0;
 }
 .archive-article-inner {
   padding: 10px 10px 10px 12px;
@@ -744,7 +744,7 @@ a.article-title:hover,
 .archive-article-date {
   color: #939393;
   text-decoration: none;
-  font-size: 0.85em;
+  font-size: 1.35rem;
   line-height: 1em;
   margin-bottom: 0.5em;
   display: block;
@@ -793,7 +793,8 @@ a.article-title:hover,
   color: #ddd;
 }
 #footer {
-  padding: 50px 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
 #footer a {
@@ -801,7 +802,7 @@ a.article-title:hover,
 }
 #footer-info {
   line-height: 1.4em;
-  font-size: 0.85em;
+  font-size: 1.35rem;
 }
 .article-entry pre,
 .article-entry .highlight {
@@ -816,7 +817,7 @@ a.article-title:hover,
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
   color: #666;
-  font-size: 0.85em;
+  font-size: 1.35rem;
 }
 .article-entry pre,
 .article-entry code {
@@ -851,7 +852,7 @@ a.article-title:hover,
   padding: 0;
 }
 .article-entry .highlight figcaption {
-  font-size: 0.85em;
+  font-size: 1.35rem;
   color: highlight-comment;
   line-height: 1em;
   margin-bottom: 1em;
@@ -1083,12 +1084,12 @@ pre .php .xml {
 .fancybox-skin {
   padding: 0 !important;
   border-radius: 0;
-  font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font-family: 'Lora', serif;
 }
 .fancybox-skin .fancybox-title .child {
   background: none;
   font-weight: 400;
-  font-size: 16px;
-  font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font-size: 1.5rem;
+  font-family: 'Lora', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }

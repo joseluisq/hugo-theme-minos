@@ -3,16 +3,16 @@
 
 name = "Minos"
 license = "MIT"
-licenselink = "https://github.com/carsonip/hugo-theme-minos/blob/master/LICENSE.md"
+licenselink = "https://github.com/joseluisq/hugo-theme-minos.git/blob/master/LICENSE.md"
 description = "A simple and retro styled theme ported from Hexo"
-homepage = "https://github.com/carsonip/hugo-theme-minos"
+homepage = "https://github.com/joseluisq/hugo-theme-minos.git"
 tags = ["blog", "minimal"]
 features = ["blog", ""]
 min_version = 0.20
 
 [author]
-  name = "Carson Ip"
-  homepage = "https://github.com/carsonip"
+  name = "Jose Quintana"
+  homepage = "https://github.com/joseluisq"
 
 # If porting an existing theme
 [original]
