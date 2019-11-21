@@ -1,74 +1,25 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
+}
+:after, :before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   line-height: 1;
-  color: #000;
-  background: #fff;
+  color: #333;
+  background-color: #fff;
+}
+html, body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 ol,
 ul {
@@ -93,7 +44,7 @@ input,
 button {
   margin: 0;
   padding: 0;
-  font: 1.5rem 'Lora', serif;
+  font: 1.25rem 'Ibarra Real Nova', serif;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -113,10 +64,12 @@ body,
   height: 100%;
 }
 body {
-  background: #fff;
-  font: 1.5rem 'Lora', serif;
+  font: 1.25rem 'Open Sans', sans-serif;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   line-height: 2.35rem;
+  color: #222;
+  margin: 0;
 }
 .outer {
   max-width: 60rem;
@@ -152,7 +105,6 @@ body {
 .logo {
   width: 94px;
   height: 57px;
-  background-image: url("images/logo.png");
   -webkit-background-size: 74px 28px;
   -moz-background-size: 74px 28px;
   background-size: 74px 28px;
@@ -160,12 +112,13 @@ body {
   background-repeat: no-repeat;
 }
 .logo-text {
-  color: #333;
   font-size: 2rem;
   margin-right: 25px;
   line-height: 4rem;
   text-decoration: none;
   background-image: none;
+  font-family: 'Ibarra Real Nova', serif;
+  color: #000;
 }
 .article-meta a,
 a.article-title,
@@ -181,7 +134,7 @@ a.article-title,
 .article-entry .gist .gist-file .gist-meta a,
 .layout-wrap-inner .category-list a,
 .tag-cloud a {
-  color: #111;
+  color: #000;
   text-decoration: none;
   border-bottom: 1px dotted transparent;
 }
@@ -396,15 +349,16 @@ a.article-title:hover,
   cursor: pointer;
 }
 .article {
-  margin: 2rem 0;
-  border-bottom: 1px solid #e0e0e0;
+  margin-top: 1rem;
+  margin-bottom: 2rem 0;
+  border-bottom: 2px dotted #ddd;
 }
 .article-inner {
   margin-bottom: 15px;
   overflow: hidden;
 }
 .article-meta {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 .article-meta:before,
 .article-meta:after {
@@ -415,7 +369,7 @@ a.article-title:hover,
   clear: both;
 }
 .article-meta a {
-  color: #939393;
+  color: #888;
 }
 .article-date {
   float: left;
@@ -446,12 +400,22 @@ a.article-title:hover,
   margin-left: 8px;
 }
 .article-header {
-  margin-bottom: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.article-header h1,
+.article-header h2,
+.article-header h3,
+.article-header h4,
+.article-header h5,
+.article-header h6 {
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
 }
 .article-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1em;
+  font-size: 2.875rem;
 }
 .article-entry {
   color: #111;
@@ -478,6 +442,7 @@ a.article-title:hover,
   font-weight: 600;
   line-height: 1.4em;
   margin: 1em 0;
+  font-family: 'Ibarra Real Nova', serif;
 }
 .article-entry ul,
 .article-entry ol,
@@ -510,7 +475,7 @@ a.article-title:hover,
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: 'Lora', serif;
+  font-family: 'Ibarra Real Nova', serif;
   font-size: 1.4em;
   margin: 1.4em 20px;
   text-align: center;
@@ -801,8 +766,6 @@ a.article-title:hover,
   font-weight: 600;
 }
 #footer-info {
-  line-height: 1.4em;
-  font-size: 1.35rem;
 }
 .article-entry pre,
 .article-entry .highlight {
@@ -1084,12 +1047,12 @@ pre .php .xml {
 .fancybox-skin {
   padding: 0 !important;
   border-radius: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Ibarra Real Nova', serif;
 }
 .fancybox-skin .fancybox-title .child {
   background: none;
   font-weight: 400;
   font-size: 1.5rem;
-  font-family: 'Lora', serif;
+  font-family: 'Ibarra Real Nova', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }

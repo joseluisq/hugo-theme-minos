@@ -7,7 +7,7 @@
         {{ end }}
         <div class="article-meta">
             <a href="{{ .RelPermalink }}" class="article-date">
-                <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
+                <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ dateFormat "02/01/2006 15:04:05 MST" .Date.Local }}</time>
             </a>
             {{ $Site := .Site }}
             {{ if .Params.categories }}
@@ -24,7 +24,7 @@
             {{ end }}
             {{ if .Site.DisqusShortname }}
             <div class="article-comment-link-wrap">
-                <a href="{{ .RelPermalink }}#disqus_thread" class="article-comment-link">Comments</a>
+                <a href="{{ .RelPermalink }}#disqus_thread" class="article-comment-link">Comentarios</a>
             </div>
             {{ end }}
         </div>
@@ -35,7 +35,7 @@
         {{ if not .Params.notoc }}
         {{ if .TableOfContents }}
         <div class="article-toc" {{ if .Site.Params.SmartToc }}style="display:none;"{{ end }}>
-            <h3>Contents</h3>
+            <h3>Contenido</h3>
             {{ .TableOfContents }}
         </div>
         {{ end }}
